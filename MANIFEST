@@ -9,8 +9,10 @@ META.json
 META.yml
 Makefile.PL
 README.md
+bin/scan_git_repositories
 examples/examples.txt
 ignore.txt
+lib/App/GitWorkspaceScanner.pm
 t/00-load.t
 xt/changes.t
 xt/kwalitee.t
