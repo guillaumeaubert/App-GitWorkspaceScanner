@@ -166,6 +166,8 @@ Arguments:
 
 An arrayref of arguments passed originally to the command line utility.
 
+=back
+
 =cut
 
 sub new
