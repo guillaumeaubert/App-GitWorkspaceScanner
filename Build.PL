@@ -41,7 +41,8 @@ my $builder = $class->new(
 	dist_version_from    => 'lib/App/GitWorkspaceScanner.pm',
 	build_requires       =>
 	{
-		'Test::Compile'         => 1.001000,
+		'Test::FailWarnings'    => 0,
+		'Test::More'            => 0,
 	},
 	requires             =>
 	{
