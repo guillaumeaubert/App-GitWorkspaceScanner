@@ -39,12 +39,12 @@ snapshot of all outstanding changes in your entire workspace.
 
 =head1 SYNOPSIS
 
-	sudo nice ./monitor_git_repositories.pl
+	sudo nice ./scan_git_repositories
 
 
 =head1 OPTIONS
 
-C<Git::WorkspaceScanner> provides a C<scan_workspace.pl> utility as a command
+C<Git::WorkspaceScanner> provides a C<scan_git_repositories> utility as a command
 line interface to the module. It supports the following command line options:
 
 =over 4
@@ -54,14 +54,14 @@ line interface to the module. It supports the following command line options:
 Print out information about the analysis performed. Off by default.
 
 	# Print out information.
-	./monitor_git_repositories.pl --verbose
+	./scan_git_repositories --verbose
 
 =item * C<--workspace>
 
 Root of the workspace to search git repositories into. By default, the search
 is performed on '/'.
 
-	./monitor_git_repositories.pl --workspace=$HOME
+	./scan_git_repositories --workspace=$HOME
 
 =item * C<--allow_untracked_files>
 
@@ -70,10 +70,10 @@ on by default, but this is likely to change in the near future as we add/clean
 up our .gitignore files.
 
 	# Do not warn on untracked files (default).
-	./monitor_git_repositories.pl --allow_untracked_files=0
+	./scan_git_repositories --allow_untracked_files=0
 
 	# Warn on untracked files.
-	./monitor_git_repositories.pl --allow_untracked_files=1
+	./scan_git_repositories --allow_untracked_files=1
 
 =item * C<--allowed_branches>
 
@@ -81,13 +81,13 @@ Generate a warning if the current branch doesn't match one of the branches
 specified. Set to C<master> default.
 
 	# Allow only using the master branch.
-	./monitor_git_repositories.pl
+	./scan_git_repositories
 
 	# Allow only using the master branch.
-	./monitor_git_repositories.pl --allowed_branches=master
+	./scan_git_repositories --allowed_branches=master
 
 	# Allow only using the master and production branches.
-	./monitor_git_repositories.pl --allowed_branches=master,production
+	./scan_git_repositories --allowed_branches=master,production
 
 =item * C<--allow_any_branches>
 
@@ -95,7 +95,7 @@ Disable the check performed by C<--allowed_branches>, which is set to force
 using the C<master> branch by default.
 
 	# Don't check the branch the repository is on.
-	./monitor_git_repositories.pl --allow_any_branches=1
+	./scan_git_repositories --allow_any_branches=1
 
 =item * C<--whitelist_repositories>
 
@@ -104,7 +104,7 @@ argument accepts a comma-separated list of paths to ignore, but by default no
 repositories are whitelisted.
 
 	# Whitelist /root/my_custom_repo
-	./monitor_git_repositories.pl --whitelist_repositories=/root/my_custom_repo
+	./scan_git_repositories --whitelist_repositories=/root/my_custom_repo
 
 =back
 
