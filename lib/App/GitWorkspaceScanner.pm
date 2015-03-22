@@ -338,7 +338,7 @@ sub get_git_repositories
 			}
 
 			# Skip paths outside of the workspace.
-			if ( $git_repository !~ /^\Q$self->{'workspace'}\E/ )
+			if ( $git_repository !~ /^\Q$self->{'workspace'}\E/x )
 			{
 				$self->{'verbose'} && $log->infof( " -> '%s' is not inside the scanned space.", $git_repository );
 				next;
