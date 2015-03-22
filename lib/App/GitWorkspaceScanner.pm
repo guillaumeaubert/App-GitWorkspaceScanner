@@ -377,7 +377,7 @@ repository and the value the git status for that git repository.
 
 =cut
 
-sub get_unclean_repositories
+sub get_unclean_repositories ## no critic (Subroutines::ProhibitExcessComplexity)
 {
 	my ( $self ) = @_;
 
