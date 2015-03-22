@@ -39,7 +39,7 @@ snapshot of all outstanding changes in your entire workspace.
 
 =head1 SYNOPSIS
 
-	sudo nice -10 ./monitor_git_repositories.pl
+	sudo nice ./monitor_git_repositories.pl
 
 
 =head1 OPTIONS
