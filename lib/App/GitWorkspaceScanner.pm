@@ -59,9 +59,10 @@ Print out information about the analysis performed. Off by default.
 =item * C<--workspace>
 
 Root of the workspace to search git repositories into. By default, the search
-is performed on '/'.
+is performed on '/', but you can use any absolute path.
 
 	./scan_git_repositories --workspace=$HOME
+
 
 =item * C<--allow_untracked_files>
 
