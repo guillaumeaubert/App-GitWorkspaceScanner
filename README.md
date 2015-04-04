@@ -3,7 +3,7 @@ App-GitWorkspaceScanner
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/App-GitWorkspaceScanner.svg?branch=master)](https://travis-ci.org/guillaumeaubert/App-GitWorkspaceScanner)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/App-GitWorkspaceScanner/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/App-GitWorkspaceScanner?branch=master)
-[![Latest Version](https://img.shields.io/github/tag/guillaumeaubert/App-GitWorkspaceScanner.svg?style=flat)](https://metacpan.org/release/App-GitWorkspaceScanner)
+[![CPAN](https://img.shields.io/cpan/v/App-GitWorkspaceScanner.svg)](https://metacpan.org/release/App-GitWorkspaceScanner)
 
 `App::GitWorkspaceScanner` scans git repositories in your workspace for local
 changes not synced up.
