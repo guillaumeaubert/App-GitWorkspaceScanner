@@ -523,6 +523,15 @@ sub get_unclean_repositories ## no critic (Subroutines::ProhibitExcessComplexity
 }
 
 
+=head1 SEE ALSO
+
+=over 4
+
+=item * L<App::IsGitSynced>
+
+=back
+
+
 =head1 BUGS
 
 Please report any bugs or feature requests through the web interface at
